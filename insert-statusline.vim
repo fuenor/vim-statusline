@@ -10,13 +10,6 @@ if !exists('g:hi_insert')
   let g:hi_insert = 'highlight StatusLine guifg=darkblue guibg=darkyellow gui=none ctermfg=blue ctermbg=yellow cterm=none'
 endif
 
-" Linux等でESC後にすぐ反映されない場合、次行以降のコメントを解除してください
-" if has('unix') && !has('gui_running')
-"   " ESC後にすぐ反映されない場合
-"   inoremap <silent> <ESC> <ESC>
-"   inoremap <silent> <C-[> <ESC>
-" endif
-
 if has('syntax')
   augroup InsertHook
     autocmd!
